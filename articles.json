@@ -1,0 +1,19 @@
+[
+    {
+      "id": "article1",
+      "title": "How I Earned My CompTIA Security+ Certification",
+      "content": "<p>This article covers defensive security strategies, monitoring, analysis, and incident response tools.</p><p>Key topics include:</p><ul><li>Network Security</li><li>Risk Management</li><li>Threat Intelligence</li></ul>",
+      "date": "2024-02-13",
+      "author": "Bogdan Bărbulescu",
+      "tags": ["CompTIA", "Certification"]
+    },
+    {
+      "id": "article2",
+      "title": "HTB Object Writeup",
+      "content": "<p>A comprehensive walkthrough of the HTB 'Object' machine. This guide includes enumeration, exploitation, and privilege escalation techniques.</p>",
+      "date": "2024-02-10",
+      "author": "Bogdan Bărbulescu",
+      "tags": ["HTB", "CTF"]
+    }
+  ]
+  
