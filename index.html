@@ -16,9 +16,10 @@
     <div class="filter-buttons" role="group" aria-label="Filter articles">
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="OSINT">OSINT</button>
-        <button class="filter-btn" data-filter="Web Security">Web Security</button>
+        <button class="filter-btn" data-filter="Web">Web</button>
         <button class="filter-btn" data-filter="CTF">CTF</button>
-        <button class="filter-btn" data-filter="Certification">Certification</button>
+        <button class="filter-btn" data-filter="THM">TryHackMe</button>
+        <button class="filter-btn" data-filter="HTB">HackTheBox</button>
     </div>
 
     <!-- Cards Container -->
@@ -26,6 +27,9 @@
        <!-- Error Message Container -->
        <div id="error-message" class="alert alert-danger" style="display: none;" role="alert"></div>
     </div>
+
+    <!-- Pagination Container -->
+    <div id="pagination-container" class="d-flex justify-content-center mt-3"></div>
 </div>
 
 <footer class="footer">
