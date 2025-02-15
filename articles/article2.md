@@ -1,0 +1,1 @@
+A comprehensive walkthrough of the HTB 'Object' machine. This guide includes enumeration, exploitation, and privilege escalation techniques.
