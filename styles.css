@@ -2,6 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
+    color: #333;
 }
 
 /* Blog container */
@@ -14,37 +15,38 @@ body {
 /* Blog title */
 .blog-title {
     text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #212529;
 }
 
 /* Filter buttons */
 .filter-buttons {
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .filter-buttons button {
     border: none;
     background: none;
-    font-size: 0.9rem;
-    padding: 8px 16px;
-    margin: 4px;
-    border-radius: 20px;
-    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     color: #333;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
 }
 
-.filter-buttons button.active {
-    background-color: #ffc107;
-    font-weight: bold;
-    color: #000;
-}
-
+.filter-buttons button.active,
 .filter-buttons button:hover {
-    border: 1px solid #ffc107;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
 }
 
 /* Blog cards */
@@ -52,27 +54,44 @@ body {
     border: none;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     padding: 20px;
     background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
-    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #212529;
 }
 
 .card-text {
     color: #555;
-    font-size: 0.95rem;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    flex-grow: 1;
 }
 
 /* Tags */
+.card-tags {
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
 .tag {
     display: inline-block;
     background: #6c757d;
@@ -82,7 +101,8 @@ body {
     padding: 5px 10px;
     border-radius: 15px;
     margin: 3px 2px;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none; /* Remove underline from tags */
 }
 
 .tag:hover {
@@ -93,43 +113,19 @@ body {
 /* Read button */
 .read-btn {
     display: inline-block;
+    margin-top: auto;
     background-color: transparent;
     color: #ffc107;
     font-weight: bold;
-    border: 1px solid #ffc107;
-    padding: 6px 12px;
+    border: 1px solid #ffc107; /* Thinner border */
+    padding: 4px 10px;      /* Smaller padding */
+    font-size: 0.9rem;     /* Smaller font size */
     border-radius: 20px;
-    transition: all 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
     text-decoration: none;
 }
 
 .read-btn:hover {
-    background-color: #ffc107;
-    color: black;
-}
-
-/* Pagination */
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.pagination button {
-    background-color: transparent;
-    border: 1px solid #ccc;
-    padding: 6px 12px;
-    margin: 4px;
-    border-radius: 6px;
-    transition: all 0.3s ease-in-out;
-}
-
-.pagination button.active {
-    background-color: black;
-    color: white;
-}
-
-.pagination button:hover {
     background-color: #ffc107;
     color: black;
 }
@@ -141,4 +137,9 @@ body {
     background: #212529;
     color: white;
     margin-top: 40px;
+}
+
+.alert-danger {
+    margin-top: 20px;
+    text-align: center;
 }
