@@ -1,4 +1,4 @@
-# Modern Blog Project
+# Blog Project
 
 This project is a simple, modern blog built with HTML, CSS, JavaScript, and Markdown. It demonstrates dynamic content loading, filtering, and responsive design.
 
