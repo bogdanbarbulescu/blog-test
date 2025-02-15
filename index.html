@@ -10,19 +10,27 @@
 <body>
 
 <div class="container py-5">
-    <h2 class="text-center">BLOG</h2>
+    <h1 class="text-center blog-title">BLOG</h1>
 
     <!-- Filter Navigation -->
-    <div class="filter-nav text-center mb-4">
-        <button class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
-        <button class="btn btn-outline-primary filter-btn" data-filter="OSINT">OSINT</button>
-        <button class="btn btn-outline-primary filter-btn" data-filter="Web Security">Web Security</button>
-        <button class="btn btn-outline-primary filter-btn" data-filter="CTF">CTF</button>
+    <div class="filter-buttons" role="group" aria-label="Filter articles">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="OSINT">OSINT</button>
+        <button class="filter-btn" data-filter="Web Security">Web Security</button>
+        <button class="filter-btn" data-filter="CTF">CTF</button>
+        <button class="filter-btn" data-filter="Certification">Certification</button>
     </div>
 
     <!-- Cards Container -->
-    <div id="card-container" class="row"></div>
+    <div id="card-container" class="row">
+       <!-- Error Message Container -->
+       <div id="error-message" class="alert alert-danger" style="display: none;" role="alert"></div>
+    </div>
 </div>
+
+<footer class="footer">
+    <p>© 2025 Bogdan Barbulescu. All rights reserved.</p>
+</footer>
 
 <script src="blog.js"></script>
 </body>
